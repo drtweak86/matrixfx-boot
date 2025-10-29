@@ -1,0 +1,19 @@
+<addon id="service.boot-matrixfx"
+       name="Boot Matrix FX (Python)"
+       version="0.9.2"
+       provider-name="drtweak86">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <!-- Start at login so it runs once the Home window is up -->
+  <extension point="xbmc.service" library="service.py" start="login" />
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Matrix-style rain overlay on startup</summary>
+    <description>Shows a green Matrix rain overlay briefly after Kodi starts.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://github.com/drtweak86/matrixfx-boot</source>
+  </extension>
+</addon>
